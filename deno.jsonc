@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "lint": {
+    "files": {
+      "include": ["src"],
+      "exclude": ["public"]
+    },
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": []
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/"],
+      "exclude": [".vscode", ".env"]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 100,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  "tasks": {
+    "dev": "deno run -A --watch ./src/server.ts"
+  }
+}
