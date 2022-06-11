@@ -6,7 +6,7 @@ Variablator は変数名やメソッド名のまま日本語訳することが�
 
 サーバー起動
 ```
-deno task dev
+docker compose up -d
 ```
 
 リクエスト

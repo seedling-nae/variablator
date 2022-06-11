@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 8000:8000
+    volumes:
+      - $PWD:/app
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
